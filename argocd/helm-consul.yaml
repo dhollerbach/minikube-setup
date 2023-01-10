@@ -1,0 +1,34 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: helm-consul
+  namespace: argocd
+  labels:
+    environment: local
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: consul
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+  source:
+    chart: consul
+    repoURL: https://helm.releases.hashicorp.com
+    targetRevision: 1.0.2
+    helm:
+      releaseName: helm-consul
+      parameters:
+        - name: ui.enabled
+          value: "true"
+        - name: ui.service.type
+          value: LoadBalancer
+        - name: ui.service.port.http
+          value: "8080"
