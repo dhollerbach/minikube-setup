@@ -4,7 +4,7 @@ This repository aims to simplify installing Minikube and the associated packages
 
 ## Prerequisites
 
-The `minikube.sh` script makes extensive use of [Homebrew](https://brew.sh/) to install dependencies and packages. Please make sure it is installed on your system before continuing.
+The `minikube.sh` script makes extensive use of [Homebrew](https://brew.sh/) and [Docker](https://www.docker.com/) to install dependencies and packages and to run Minikube. Please make sure both are installed on your system before continuing.
 
 ## Installation
 
