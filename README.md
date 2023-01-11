@@ -11,7 +11,7 @@ The `minikube.sh` script makes extensive use of [Homebrew](https://brew.sh/) and
 To being your local setup, clone this repository and cd into your newly cloned repository.
 
 ```
-git@github.com:dhollerbach/minikube-setup.git
+git@github.com:NerdUnited-DevOps/minikube-setup.git
 
 cd minikube-setup/
 ```
