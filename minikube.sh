@@ -15,12 +15,7 @@ brew install \
     kubernetes-cli \
     minikube \
     terraform \
-    tfenv \
     vault
-
-# links tfenv for switching between Terraform versions
-brew unlink terraform
-brew link tfenv
 
 ############
 # MINIKUBE #

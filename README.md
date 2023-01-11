@@ -33,7 +33,6 @@ DevOps Tools Installed:
 - kubernetes-cli
 - minikube
 - terraform
-- tfenv
 - vault
 
 This script will install Minikube, configure a few addons (ingress / metrics-server), install some DevOps tools, and open a tunnel to your localhost. Upon successful completion, you will be prompted for your password so that Minikube can establish a tunnel to your localhost as previously mentioned. Running `minikube tunnel` is the primary difference when using arm64 processors as other processors do not usually require this step. If you ever lose your tunnel connection - like if you close your terminal - you can reestablish the tunnel by opening a new terminal and running the following command:
