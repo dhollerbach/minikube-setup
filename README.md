@@ -68,7 +68,7 @@ Username: admin
 Password: admin
 ```
 
-### Step 3: Installing Applications Using ArgoCD
+### Step 3: Install Applications Using ArgoCD
 
 There are a number of applications provided in the `argocd` directory that can be installed into your Minikube environment. To install all of these applications, run the following command:
 
