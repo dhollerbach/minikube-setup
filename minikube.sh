@@ -28,7 +28,7 @@ brew link tfenv
 # start minikube and enable addons
 minikube start --memory 4096 --cpus 4
 minikube addons enable ingress
-# minikube addons enable metrics-server
+minikube addons enable metrics-server
 
 # start minikube tunnel
 echo "Starting minikube tunnel..."
