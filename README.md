@@ -11,7 +11,7 @@ The `setup.sh` script makes extensive use of [Homebrew](https://brew.sh/) to ins
 To begin your local setup, clone this repository and cd into your newly cloned repository.
 
 ```
-git@github.com:NerdUnited-DevOps/minikube-setup.git
+git@github.com:dhollerbach/minikube-setup.git
 
 cd minikube-setup/
 ```
@@ -60,7 +60,7 @@ terraform init
 terraform apply
 ```
 
-Terraform simply creates a Kubernetes namespace for ArgoCD called `argocd` and then installs ArgoCD using Helm. Once Terraform is completes successfully, ensure your `minikube tunnel` is still running or rerun it if needed. Then, login to ArgoCD using [localhost](https://localhost) - the certificate error is expected and safe to ingore since we are using a self-signed certificate for our localhost setup. The default credentials to login to ArgoCD are:
+Terraform simply creates a Kubernetes namespace for ArgoCD called `argocd` and then installs ArgoCD using Helm. Once Terraform is finishes successfully, ensure your `minikube tunnel` is still running or rerun it if needed. Then, login to ArgoCD using [localhost](https://localhost) - the certificate error is expected and safe to ingore since we are using a self-signed certificate for our localhost setup. The default credentials to login to ArgoCD are:
 
 ```
 Username: admin
