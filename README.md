@@ -1,17 +1,17 @@
 # Overview
 
-This repository aims to simplify installing Minikube and the associated packages required for running a standard local Kubernetes environment using common DevOps tools like [Terraform](https://www.terraform.io/), [Vault](https://www.vaultproject.io/), and [ArgoCD](https://argo-cd.readthedocs.io/en/stable/). After running the below steps, you will have a fully functional Minikube setup and access to a number of applications deployed through ArgoCD.
+This repository aims to simplify installing Minikube and some common DevOps packages on a Mac or Linux distribution. After running the below steps, you will have a fully functional Minikube environment with the option to install to a number of applications through ArgoCD, including Vault, Consul, and more! Additional applications will be added as needed.
 
 ## Prerequisites
 
-The `setup.sh` script makes extensive use of [Homebrew](https://brew.sh/) to install dependencies and packages and to run Minikube. This script can install Homebrew for you if you select "y" when prompted. Otherwise, install [Homebrew](https://brew.sh/) manually.
+The `setup.sh` script makes extensive use of [Homebrew](https://brew.sh/) to install dependencies and packages and to run Minikube. This script will attempt to install Homebrew for you if desired. Otherwise, install [Homebrew](https://brew.sh/) manually.
 
 ## Installation
 
-To being your local setup, clone this repository and cd into your newly cloned repository.
+To begin your local setup, clone this repository and cd into your newly cloned repository.
 
 ```
-git@github.com:NerdUnited-DevOps/minikube-setup.git
+git@github.com:dhollerbach/minikube-setup.git
 
 cd minikube-setup/
 ```
