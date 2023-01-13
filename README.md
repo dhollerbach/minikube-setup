@@ -88,7 +88,7 @@ kubectl apply -f argocd/<FILENAME>  # like argocd/helm-kube-state-metrics.yaml
 | helm-kube-state-metrics | kubectl apply -f argocd/helm-kube-state-metrics.yaml |
 | helm-postgresql         | kubectl apply -f argocd/helm-postgresql.yaml |
 | helm-redis              | kubectl apply -f argocd/helm-redis.yaml |
-| helm-vault              | kubectl apply -f argocd/helm-vault.yaml<ul><li>Login to [localhost:8200](http://localhost:8200)</li><li>Under `Key shares`, type "1"</li><li>Under `Key threshold`, type "1"</li><li>Click `Initialize`</li><li>Click `Download keys`</li><li>Click `Continue to Unseal`</li><li>Under `Unseal Key Portion`, enter your unseal seal that you downloaded</li><li>Click `Unseal`</li><li>Under `Token`, enter your root token that you downloaded</li><li>Click `Sign In`</li></ul> |
+| helm-vault              | kubectl apply -f argocd/helm-vault.yaml<ul><li>Browse to [localhost:8200](http://localhost:8200)</li><li>Under `Key shares`, type "1"</li><li>Under `Key threshold`, type "1"</li><li>Click `Initialize`</li><li>Click `Download keys`</li><li>Click `Continue to Unseal`</li><li>Under `Unseal Key Portion`, enter your unseal seal that you downloaded</li><li>Click `Unseal`</li><li>Under `Token`, enter your root token that you downloaded</li><li>Click `Sign In`</li></ul> |
 
 ## Delete Minikube Environment
 
