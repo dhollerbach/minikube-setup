@@ -4,7 +4,7 @@ This repository aims to simplify installing Minikube and the associated packages
 
 ## Prerequisites
 
-The `minikube.sh` script makes extensive use of [Homebrew](https://brew.sh/) to install dependencies and packages and to run Minikube. This script can install Homebrew for you if you select "y" when prompted. Otherwise, install [Homebrew](https://brew.sh/) manually.
+The `setup.sh` script makes extensive use of [Homebrew](https://brew.sh/) to install dependencies and packages and to run Minikube. This script can install Homebrew for you if you select "y" when prompted. Otherwise, install [Homebrew](https://brew.sh/) manually.
 
 ## Installation
 
@@ -21,7 +21,7 @@ cd minikube-setup/
 To install Minikube and its associated DevOps tools, run the following script:
 
 ```
-./minikube.sh
+./setup.sh
 ```
 
 DevOps Tools Installed:
