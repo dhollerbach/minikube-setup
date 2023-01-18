@@ -44,13 +44,19 @@ sudo minikube tunnel
 
 ### Step 2: Run Terraform
 
-To run Terraform against Minikube, make sure you have your Minikube Kubernetes context selected. Your Minikube Kubernetes context should already be selected if you just ran the script above but in case it's not, or to select Minikube as your Kubernetes context in general, run the following command:
+To run Terraform against Minikube, make sure you have your Minikube Kubernetes context selected. Your Minikube Kubernetes context should already be selected if you just ran the script above but in case it's not, or to select Minikube as your Kubernetes context in general, run the following commands:
 
+Check your current Kubernetes context:
+```
+kubectl config current-context
+```
+
+Switch to the Minikube Kubernetes context:
 ```
 kubectl config use-context minikube
 ```
 
-Now with your Minikube Kubernetes context selected, run Terraform with the following commands:
+Now with your Minikube Kubernetes context selected, run Terraform using the following commands:
 
 ```
 cd terraform/
@@ -97,5 +103,7 @@ To delete your Minikube environment, simply run the following command to remove 
 ```
 minikube delete
 ```
+
+If you previously ran Terraform as part of this deployment, be sure to cleanup any Terraform files or directories created as a result. For example, lock files, state files, and a terraform directory to store modules will all have been created.
 
 **PLEASE NOTE THIS IS A DESTRUCTIVE ACTION AND WILL DESTROY ALL OF YOUR WORK, INCLUDING VAULT SECRETS!!!
