@@ -21,31 +21,9 @@ resource "helm_release" "argocd" {
   chart      = "argo-cd"
   timeout    = 300
 
-  //  ingress configuration
-  set {
-    name  = "server.ingress.annotations.nginx\\.ingress\\.kubernetes\\.io/force-ssl-redirect"
-    value = "true"
-  }
-
-  set {
-    name  = "server.ingress.annotations.nginx\\.ingress\\.kubernetes\\.io/ssl-passthrough"
-    value = "true"
-  }
-
-  set {
-    name  = "server.ingress.enabled"
-    value = "true"
-  }
-
-  set {
-    name  = "server.ingress.hosts"
-    value = "{localhost}"
-  }
-
-  set {
-    name  = "server.service.type"
-    value = "LoadBalancer" //  sets argocd server service type to LoadBalancer. This is required when running on Mac M1s
-  }
+  values = [
+    "${file("values.yaml")}"
+  ]
 
   set {
     name  = "configs.secret.argocdServerAdminPassword"

@@ -1,0 +1,15 @@
+server:
+  ingress:
+    enabled: true
+    annotations:
+      nginx.ingress.kubernetes.io/force-ssl-redirect: true
+      nginx.ingress.kubernetes.io/ssl-passthrough: true
+    hosts:
+      - argocd.hollerbach.io
+    # tls:
+    #   - secretName: nginx-hollerbach-io-certificate
+    #     hosts: 
+    #       - argocd.hollerbach.io
+    # https: true
+  service:
+    type: LoadBalancer
