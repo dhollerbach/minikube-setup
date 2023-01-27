@@ -90,7 +90,9 @@ kubectl apply -f argocd/<FILENAME>  # like argocd/helm-kube-state-metrics.yaml
 
 | ArgoCD Package          | Install Steps |
 | --------------          | ------------- |
+| helm-cert-manager       | kubectl apply -f argocd/helm-cert-manager.yaml |
 | helm-consul             | kubectl apply -f argocd/helm-consul.yaml |
+| helm-istio              | kubectl apply -f argocd/helm-istio.yaml |
 | helm-kube-state-metrics | kubectl apply -f argocd/helm-kube-state-metrics.yaml |
 | helm-postgresql         | kubectl apply -f argocd/helm-postgresql.yaml |
 | helm-redis              | kubectl apply -f argocd/helm-redis.yaml |
